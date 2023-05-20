@@ -6,6 +6,7 @@
   --aktiv: #404bbf;
   --iris: #4d5ae5;
   --light: #f4f4fd;
+  --passiv-icon: #8e8f99;
 }
 *,
 *::before,
@@ -269,7 +270,7 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -347,32 +348,35 @@ h3 {
 /*costomer */
 
 .costomer-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
-  border: 1px solid var(--text);
-  border-radius: 4px;
+  width: calc((100%-120px) / 6);
+  height: 88px;
 }
 
+.costomer-list-link {
+  width: 100%;
+  height: 100%;
+  color: var(--passiv-icon);
+  border: 1px solid var(--passiv-icon);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .costomer-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
 .castomer-list-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
-.costomer-list-item:hover,
-.costomer-list-item:focus {
+.costomer-list-link:hover,
+.costomer-list-link:focus {
   border-color: var(--aktiv);
-}
-
-.costomer-list-item:hover .castomer-list-icon,
-.costomer-list-item:focus .castomer-list-icon {
-  fill: var(--aktiv);
+  color: var(--aktiv);
 }
 
 /* footer */
