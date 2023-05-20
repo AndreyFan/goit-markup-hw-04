@@ -407,6 +407,11 @@ h3 {
 .container-footer {
   display: flex;
   gap: 120px;
+  align-items: baseline;
+}
+
+.footer-right {
+  margin-right: 120px;
 }
 
 .social-list-footer {
