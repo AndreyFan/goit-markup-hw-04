@@ -249,32 +249,15 @@ h3 {
   width: calc((100% - 72px) / 4);
 }
 
-.advantages-item::before {
-  display: block;
-  content: '';
+.advantages-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  background-size: 64px;
-  background-repeat: no-repeat;
-  background-position: center;
+
   background-color: var(--light);
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
 }
 
 /* doing */
