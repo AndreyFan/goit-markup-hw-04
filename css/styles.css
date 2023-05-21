@@ -39,6 +39,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 img {
@@ -346,6 +347,10 @@ h3 {
 }
 
 /*costomer */
+.section-costomers {
+  margin-top: 0;
+  padding: 120px 0;
+}
 
 .costomer-list-item {
   width: calc((100%-120px) / 6);
@@ -419,11 +424,6 @@ h3 {
   gap: 16px;
 }
 
-.social-list-icon {
-  width: 24px;
-  height: 24px;
-}
-
 .social-list-footer .social-list-link:hover,
 .social-list-footer .social-list-link:focus {
   background-color: #31d0aa;
@@ -431,7 +431,6 @@ h3 {
 
 /* Page PORTFOLIO */
 .section-portfolio {
-  background-color: #f4f4fd;
   padding-top: 96px;
   padding-bottom: 120px;
 }
